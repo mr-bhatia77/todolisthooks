@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 import './Login.css'
 
 
@@ -42,7 +43,7 @@ const onSubmithandler = (e) => {
             <label for="psw"><b>Password</b></label>
             <input type="password" onChange={inputPassHandler}
              placeholder="Enter Password" name="psw" required></input>
-            <button onClick={loginHandler}>Login</button>
+            <Link to = "/"><button onClick={loginHandler}>Login</button></Link>
             <button onClick={registerHandler}>Register</button>
             </div>
         </form>
